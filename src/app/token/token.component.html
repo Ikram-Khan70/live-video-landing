@@ -1,0 +1,13 @@
+<div class="login-container">
+    <h2>Token</h2>
+    <!-- <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div> -->
+    <form (ngSubmit)="login()">
+        <mat-form-field appearance="fill">
+            <mat-label>Token</mat-label>
+            <input matInput [(ngModel)]="username" name="username" required>
+        </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+  
